@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace TodoApi.Models
 {
@@ -7,7 +8,6 @@ namespace TodoApi.Models
         public TodoContext(DbContextOptions<TodoContext> options)
             : base(options)
         {
-            
         }
 
         public DbSet<TodoItem> TodoItems { get; set; }
